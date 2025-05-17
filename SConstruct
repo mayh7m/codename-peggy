@@ -18,7 +18,7 @@ sources = Glob("src/*.cpp")
 
 if env["platform"] == "macos":
     library = env.SharedLibrary(
-        "proj/bin/libgdexample.{}.{}.framework/libgdexample.{}.{}".format(
+        "proj/bin/codename_peggy.{}.{}.framework/codename_peggy.{}.{}".format(
             env["platform"], env["target"], env["platform"], env["target"]
         ),
         source=sources,
@@ -26,17 +26,17 @@ if env["platform"] == "macos":
 elif env["platform"] == "ios":
     if env["ios_simulator"]:
         library = env.StaticLibrary(
-            "proj/bin/libgdexample.{}.{}.simulator.a".format(env["platform"], env["target"]),
+            "proj/bin/codename_peggy.{}.{}.simulator.a".format(env["platform"], env["target"]),
             source=sources,
         )
     else:
         library = env.StaticLibrary(
-            "proj/bin/libgdexample.{}.{}.a".format(env["platform"], env["target"]),
+            "proj/bin/codename_peggy.{}.{}.a".format(env["platform"], env["target"]),
             source=sources,
         )
 else:
     library = env.SharedLibrary(
-        "proj/bin/libgdexample{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
+        "proj/bin/codename_peggy{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
         source=sources,
     )
 

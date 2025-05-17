@@ -10,6 +10,6 @@ config_version=5
 
 [application]
 
-config/name="the game"
+config/name="codename peggy"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
