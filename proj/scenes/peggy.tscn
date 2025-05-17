@@ -1,0 +1,172 @@
+[gd_scene load_steps=31 format=3 uid="uid://r4sru5hund75"]
+
+[ext_resource type="Texture2D" uid="uid://bprrc24r1iah" path="res://assets/sprites/peggy/glide/glide_1.png" id="1_3rmv7"]
+[ext_resource type="Texture2D" uid="uid://d3h12ikxi7l8t" path="res://assets/sprites/peggy/idle/idle_1.png" id="1_7rvmu"]
+[ext_resource type="Script" uid="uid://7x8uvfiwt324" path="res://scripts/peggy.gd" id="1_b3mc3"]
+[ext_resource type="Texture2D" uid="uid://bypgq6bng75dd" path="res://assets/sprites/peggy/glide/glide_2.png" id="2_kpotl"]
+[ext_resource type="Texture2D" uid="uid://conf0lyp3w8bq" path="res://assets/sprites/peggy/idle/idle_2.png" id="2_yrku8"]
+[ext_resource type="Texture2D" uid="uid://4infcnowhsv2" path="res://assets/sprites/peggy/idle/idle_3.png" id="3_84f8m"]
+[ext_resource type="Texture2D" uid="uid://ck1aywrip2qdg" path="res://assets/sprites/peggy/glide/glide_3.png" id="3_rl2jx"]
+[ext_resource type="Texture2D" uid="uid://bdbf6p6hjk7tc" path="res://assets/sprites/peggy/idle/idle_4.png" id="4_bml80"]
+[ext_resource type="Texture2D" uid="uid://cd5bjdu4dqqqu" path="res://assets/sprites/peggy/glide/glide_4.png" id="4_dwwbt"]
+[ext_resource type="Texture2D" uid="uid://d0vvk26xe5n85" path="res://assets/sprites/peggy/idle/idle_5.png" id="5_6fjdq"]
+[ext_resource type="Texture2D" uid="uid://ctt1x3f0g5526" path="res://assets/sprites/peggy/idle/idle_6.png" id="6_uc6od"]
+[ext_resource type="Texture2D" uid="uid://ckq3ff1nxve6f" path="res://assets/sprites/peggy/idle/idle_7.png" id="7_u5dvv"]
+[ext_resource type="Texture2D" uid="uid://csptkcbfd2iy" path="res://assets/sprites/peggy/idle/idle_8.png" id="8_av42p"]
+[ext_resource type="Texture2D" uid="uid://d3rcbk157a7nk" path="res://assets/sprites/peggy/idle/idle_9.png" id="9_bhls1"]
+[ext_resource type="Texture2D" uid="uid://cw22o8fqixv7n" path="res://assets/sprites/peggy/idle/idle_10.png" id="10_ylifv"]
+[ext_resource type="Texture2D" uid="uid://2531d4ehw6c6" path="res://assets/sprites/peggy/jump/jump_1.png" id="15_b3mc3"]
+[ext_resource type="Texture2D" uid="uid://nr4n7m7haenk" path="res://assets/sprites/peggy/jump/jump_2.png" id="16_secer"]
+[ext_resource type="Texture2D" uid="uid://ci4tt2xofuf66" path="res://assets/sprites/peggy/jump/jump_3.png" id="17_eqc4j"]
+[ext_resource type="Texture2D" uid="uid://br4fvkka3l8dt" path="res://assets/sprites/peggy/jump/jump_4.png" id="18_4y1qk"]
+[ext_resource type="Texture2D" uid="uid://cu0khrk3kbb52" path="res://assets/sprites/peggy/run/run_1.png" id="19_obp7v"]
+[ext_resource type="Texture2D" uid="uid://b4faovgpxvc0j" path="res://assets/sprites/peggy/run/run_2.png" id="20_47vnk"]
+[ext_resource type="Texture2D" uid="uid://ckoy3p1sh7oq8" path="res://assets/sprites/peggy/run/run_3.png" id="21_bydlq"]
+[ext_resource type="Texture2D" uid="uid://ctplb3kqoko4j" path="res://assets/sprites/peggy/run/run_4.png" id="22_fq8gr"]
+[ext_resource type="Texture2D" uid="uid://em74s1leowwu" path="res://assets/sprites/peggy/run/run_5.png" id="23_tlgsb"]
+[ext_resource type="Texture2D" uid="uid://boxa8uqwjf8rh" path="res://assets/sprites/peggy/run/run_6.png" id="24_xsus6"]
+[ext_resource type="AudioStream" uid="uid://dt506bul2vbux" path="res://assets/audio/peggy/temp_footsteps.mp3" id="25_dwwbt"]
+[ext_resource type="AudioStream" uid="uid://d5tl7xbnxgws" path="res://assets/audio/peggy/temp_jump.mp3" id="26_b3mc3"]
+[ext_resource type="AudioStream" uid="uid://yp30agcu6435" path="res://assets/audio/peggy/temp_fall.mp3" id="27_secer"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nq7no"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3rmv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_kpotl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rl2jx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dwwbt")
+}],
+"loop": true,
+"name": &"glide",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7rvmu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_yrku8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_84f8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_bml80")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6fjdq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_uc6od")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_u5dvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_av42p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bhls1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ylifv")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_b3mc3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_secer")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_eqc4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_4y1qk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_4y1qk")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_obp7v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_47vnk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_bydlq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_fq8gr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_tlgsb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_xsus6")
+}],
+"loop": true,
+"name": &"run",
+"speed": 16.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3rmv7"]
+radius = 34.0
+height = 184.0
+
+[node name="Peggy" type="Peggy"]
+speed = 500.0
+gravity = 50.0
+process_mode = 4
+collision_mask = 2
+script = ExtResource("1_b3mc3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_nq7no")
+animation = &"run"
+autoplay = "idle"
+offset = Vector2(0, -180)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -97)
+shape = SubResource("CapsuleShape2D_3rmv7")
+
+[node name="Sfx" type="Node" parent="."]
+
+[node name="SfxFootstep" type="AudioStreamPlayer2D" parent="Sfx"]
+stream = ExtResource("25_dwwbt")
+volume_db = 5.0
+pitch_scale = 2.0
+
+[node name="SfxJump" type="AudioStreamPlayer2D" parent="Sfx"]
+stream = ExtResource("26_b3mc3")
+pitch_scale = 1.5
+
+[node name="SfxFall" type="AudioStreamPlayer2D" parent="Sfx"]
+stream = ExtResource("27_secer")
+volume_db = 5.0
+pitch_scale = 2.0
+
+[node name="SfxChangeDirection" type="AudioStreamPlayer2D" parent="Sfx"]
+stream = ExtResource("26_b3mc3")
+volume_db = -10.0
+pitch_scale = 2.5
+
+[connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]

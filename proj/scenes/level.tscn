@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=4 uid="uid://c7fsqigu5prh"]
+
+[ext_resource type="PackedScene" uid="uid://r4sru5hund75" path="res://scenes/peggy.tscn" id="1_2q6dc"]
+[ext_resource type="Texture2D" uid="uid://bsngwq4p1bl8d" path="res://assets/sprites/levels/backgrounds/basic background.png" id="2_w7c3h"]
+[ext_resource type="Texture2D" uid="uid://2jrqjpqh10vx" path="res://assets/sprites/levels/tilesets/basic tile.png" id="2_w8frs"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mx8sn"]
+texture = ExtResource("2_w8frs")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+
+[sub_resource type="TileSet" id="TileSet_ppgk2"]
+tile_size = Vector2i(128, 128)
+physics_layer_0/collision_layer = 2
+physics_layer_0/collision_mask = 0
+sources/1 = SubResource("TileSetAtlasSource_mx8sn")
+
+[node name="Level" type="Level"]
+process_mode = 4
+
+[node name="Background" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+texture = ExtResource("2_w7c3h")
+centered = false
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+position = Vector2(0, 1080)
+scale = Vector2(0.5, 0.5)
+tile_map_data = PackedByteArray("AAAAAP//AQAAAAAAAAABAP//AQAAAAAAAAACAP//AQAAAAAAAAADAP//AQAAAAAAAAAEAP//AQAAAAAAAAAFAP//AQAAAAAAAAAGAP//AQAAAAAAAAAHAP//AQAAAAAAAAAIAP//AQAAAAAAAAAJAP//AQAAAAAAAAAKAP//AQAAAAAAAAALAP//AQAAAAAAAAAMAP//AQAAAAAAAAANAP//AQAAAAAAAAAOAP//AQAAAAAAAAAPAP//AQAAAAAAAAAQAP//AQAAAAAAAAARAP//AQAAAAAAAAASAP//AQAAAAAAAAATAP//AQAAAAAAAAAUAP//AQAAAAAAAAAVAP//AQAAAAAAAAAWAP//AQAAAAAAAAAXAP//AQAAAAAAAAAYAP//AQAAAAAAAAAZAP//AQAAAAAAAAAaAP//AQAAAAAAAAAbAP//AQAAAAAAAAAcAP//AQAAAAAAAAAdAP//AQAAAAAAAAAAAPr/AQAAAAAAAAAAAPv/AQAAAAAAAAAAAPz/AQAAAAAAAAAAAP3/AQAAAAAAAAAAAP7/AQAAAAAAAAAAAO//AQAAAAAAAAAAAPD/AQAAAAAAAAAAAPH/AQAAAAAAAAAAAPL/AQAAAAAAAAAAAPP/AQAAAAAAAAAAAPT/AQAAAAAAAAAAAPX/AQAAAAAAAAAAAPb/AQAAAAAAAAAAAPf/AQAAAAAAAAAAAPj/AQAAAAAAAAAAAPn/AQAAAAAAAAAdAO//AQAAAAAAAAAdAPD/AQAAAAAAAAAdAPH/AQAAAAAAAAAdAPL/AQAAAAAAAAAdAPP/AQAAAAAAAAAdAPT/AQAAAAAAAAAdAPX/AQAAAAAAAAAdAPb/AQAAAAAAAAAdAPf/AQAAAAAAAAAdAPj/AQAAAAAAAAAdAPn/AQAAAAAAAAAdAPr/AQAAAAAAAAAdAPv/AQAAAAAAAAAdAPz/AQAAAAAAAAAdAP3/AQAAAAAAAAAdAP7/AQAAAAAAAAA=")
+tile_set = SubResource("TileSet_ppgk2")
+occlusion_enabled = false
+
+[node name="Peggy" parent="." instance=ExtResource("1_2q6dc")]
+jumpForce = 1000.0
+position = Vector2(960, 540)
+scale = Vector2(0.5, 0.5)
