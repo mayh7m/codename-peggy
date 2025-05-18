@@ -135,7 +135,7 @@ void Peggy::unsquish(const double delta) {
     get_node<AnimatedSprite2D>("AnimatedSprite2D")->set_scale(
         { static_cast<real_t>(Math::move_toward(static_cast<double>(get_node<AnimatedSprite2D>("AnimatedSprite2D")->get_scale().x), 1.0, 1.5 * delta)), 
           static_cast<real_t>(Math::move_toward(static_cast<double>(get_node<AnimatedSprite2D>("AnimatedSprite2D")->get_scale().y), 1.0, 1.5 * delta)) }
-    ); // fix the size a little more to the default sprite scale
+    );  // fix the size a little more to the default sprite scale
 }
 
 void Peggy::changeDirectionBodyResponse() {
