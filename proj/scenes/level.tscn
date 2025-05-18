@@ -34,6 +34,5 @@ tile_set = SubResource("TileSet_ppgk2")
 occlusion_enabled = false
 
 [node name="Peggy" parent="." instance=ExtResource("1_2q6dc")]
-jumpForce = 1000.0
 position = Vector2(960, 540)
 scale = Vector2(0.5, 0.5)
