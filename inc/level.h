@@ -1,8 +1,7 @@
 #pragma once
 
 #include <godot_cpp/classes/engine.hpp>
-
-#include "peggy.h"
+#include <godot_cpp/classes/node2d.hpp>
 
 namespace godot {
     // level class
