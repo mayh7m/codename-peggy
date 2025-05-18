@@ -8,16 +8,6 @@
 #include <godot_cpp/classes/engine.hpp>
 #include <godot_cpp/classes/input.hpp>
 #include <godot_cpp/classes/input_map.hpp>
-#include <godot_cpp/classes/node.hpp>
-#include <godot_cpp/classes/progress_bar.hpp>
-#include <godot_cpp/classes/property_tweener.hpp>
-#include <godot_cpp/classes/scene_tree.hpp>
-#include <godot_cpp/classes/sprite2D.hpp>
-#include <godot_cpp/classes/timer.hpp>
-#include <godot_cpp/core/class_db.hpp>
-#include <godot_cpp/godot.hpp>
-#include <godot_cpp/variant/utility_functions.hpp>
-#include <godot_cpp/core/math.hpp>
 
 namespace godot {
 
